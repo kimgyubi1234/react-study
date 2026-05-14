@@ -1,7 +1,7 @@
 import { IoEyeOutline } from "react-icons/io5";
 import * as s from "./styles";
 
-function PasswordInPut({title, name}) {
+function PasswordInPut({title, name, value, onC}) {
     const [type, setType] = useState("password");
     const handlejHiddenOnClick = () => {
         setType(type === "password" ? "text" : "password");

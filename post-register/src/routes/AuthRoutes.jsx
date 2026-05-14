@@ -5,8 +5,8 @@ function AuthRoutes() {
     return (
         <AuthRoutes>
         <Routes>
-            <Route path="signup" element={<Signup />}/>
-            <Route path="signin" element={<>로그인</>}/>
+            <Route path="signup" element={<signup />}/>
+            <Route path="signin" element={<signin/>}/>
         </Routes>
         </AuthRoutes>
 
