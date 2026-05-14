@@ -10,6 +10,8 @@ function Signin() {
     // password: "asdfa",
     // ]);
 
+    
+
     const requestSignin = (eamil, password) => {
         Jason.parse(localStorage.getItem("users"));
         const foundUser = users.find(user => user.email === email && user.password === password);
@@ -22,7 +24,8 @@ function Signin() {
     
 
         const handelSigninOnClick = async () => {
-            const response = await requestSignin(inputValues.emal, inputValues,password)
+            const response = await requestSignin(inputValues.emal, inputValues,password);
+            localStorage.setItem("accessToken");
         }
 
         // localStorage,setIntem("loginUser", JAON.stingify(temUser));

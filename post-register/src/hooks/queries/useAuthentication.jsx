@@ -33,5 +33,8 @@ export function useAuthentication(accessToken) {
                 return error;
             }
         },
+        // 
+        staleTime: 1000 * 60 * 2, // 2분이 지나면 신선하지 않다
+        gcTime: 1000 * 60 * 5, // 가바지컬렉터, 5분이 지나면 이 캐시 데이터는 쓰레기가 된다 -> 5분이 지나면 캐시가 사라진다
     });
 }
