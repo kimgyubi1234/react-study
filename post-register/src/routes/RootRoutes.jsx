@@ -38,9 +38,8 @@ function RootRoutes() {
                 ? <h1>로딩중</h1>
                 :
                 <Routes>
-                    <Route path="/" element={<></>}>
-
-                    </Route>
+                    <Route path="/" element={<PostList/>} />
+                    <Route path="/write" element={<PostRegister/>} />
                     <Route path="/auth/*" element={<AuthRoutes />} />
                     <Route path="*" element={<>페이지를 찾을 수 없습니다.</>} />
                 </Routes>

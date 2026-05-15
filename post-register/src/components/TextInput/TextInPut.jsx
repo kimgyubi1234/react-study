@@ -1,6 +1,6 @@
 import * as s from "./styles";
 
-function TextInPut({title, name}) {
+function TextInPut({title, name, value, onChange}) {
 
     return (
         <div>
